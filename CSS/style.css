@@ -4,7 +4,7 @@ Html:
 Css:
 1.1project center
 1.2resume style
-2.contact style
+
 4.nav li moves with the page selected
 5.footer remove, replaced by fixed SM icons left-bottom corner with C
 Js and JQuery:
@@ -23,11 +23,10 @@ header {
   background-size: cover;
   background-position: center;
   height: 70vh;
-  max-width: 100%;
+  opacity: .7;
 }
 .contanier {
   position: relative;
-  max-width: 1000px;
 }
 .contanier::after{
   content: "";
@@ -74,27 +73,13 @@ header {
  a:visited {
    color: inherit;
  }
-/*header  img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10%;
-  border-radius: 100%;
-  border: 2px solid white;
-  margin-left: 20px;
-  margin-top: 20px;
-  transition: transform 2s ease-in;
-}*/
-/*.rotate:hover,
-.rotate:focus{
-  transform: scale(1.2);
-}*/
+
 /***********************
  Burger menu
  **********************/
 .menu-toggle {
   padding: 2em;
-  position: fixed;
+  position: absolute;
   top: .5em;
   right: .5em;
   cursor: pointer;
@@ -118,7 +103,6 @@ header {
 }
 .main-nav--open {
   height: auto;
-  position: fixed;
 }
 .open .hamburger {
   transform: rotate(45deg);
@@ -190,7 +174,7 @@ Downarrow
   color: #50340d;
 }
 .hireMe a:hover {
-  color: tomato;
+  color: red;
   cursor: pointer;
   transition: color .5s esse-in .4s;
    }
@@ -254,17 +238,15 @@ Sections Menu
 
 .sections:nth-child(2){ /* Section Publication */
  background-image: url('../img/Publication.png');
- border: 1px solid;
- font-size: 1em;
+ font-size: 14px;
  margin:0 30px;
  padding: 20px 40px;
  color: #fff;
- box-shadow: 5px 5px #524E4E;
+ box-shadow: 5px 5px 5px 5px #524E4E;
 }
 .BoxPublication > p::first-letter {
-font-size: 130%;
-font-weight: bold;
-color: red;
+font-size: 40px;
+color: #fff;
 margin-left: 2em;
 }
 .BoxPublication img {
@@ -280,12 +262,13 @@ transform: rotate(-5deg) scale(1.1);
 /* End Section Publication */
 
 .sections:nth-child(3){/* Start Section Projects */
-  margin: 30px 10px;
+  margin: 30px;
+  height: 60vh;
+  width: 90%;
+  border-top: 1px solid #979494;
 }
 /* End Section Projects */
-
 .sections:nth-child(4){ /* Start Section CV */
-
 }
 /* End Section CV */
 /*input[type=text],input[type=email], select, textarea {
@@ -391,27 +374,35 @@ Media Que.
   position: relative;
 }
 .main-nav  {
-  height: auto;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background: transparent;
-  box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+  height: 33px;
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  width: 50%;
+  background-color: #994c00;
+  /*box-shadow: 0 1px 4px rgba(0,0,0, 0.4);*/
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
 .main-nav li{
   display: inline-block;
-  border: none;
+  border-right: 1px solid #fff;
   font-size: 15px bold;
   color: #fff;
   text-shadow: 3px;
   padding: 3px;
+  width: 100%;
+  margin: auto;
 }
 .main-nav li:last-child{
-  margin-right: 10px;
+  border-right: none;
 }
 .main-nav a{
   padding: 5px;
-  margin-left: 1em;
 }
 .main-nav a:hover,
 .main-nav a:focus{
@@ -420,11 +411,12 @@ Media Que.
 .main-nav a {
   transition: none !important;
 }
-.welocme {
+/*.welocme {
   position: absolute;
   top: 20%;
   left: 40%;
-}/*End Header page*/
+}*/
+/*End Header page*/
 /******************
 Sections Body Style
 *******************/
@@ -432,16 +424,17 @@ Sections Body Style
   padding: 0 25px;
 }
 .sections p{
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
-.sections button{
+/*.sections button{
   width:35%;
-}
+}*/
 .sections:nth-child(2){ /* Section Publication */
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
+
 /******************
 FOOTER Style
 *******************/
@@ -474,27 +467,42 @@ FOOTER Style
   padding: 0 40px;
 }
 .sections p{
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 .sections:nth-child(2){ /* Section Publication */
-
+  position: relative;
+  width: 60%;
+  height: 60vh;
+  margin-bottom: 100px;
 }
 .BoxPublication > h1{
   margin-bottom: 10%;
+  color: #fff;
 }
 .BoxPublication > p {
   width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 45%;
 }
 .BoxPublication > img {
+  position: absolute;
+  top: 30%;
+  left: -20%;
   height: 20em;
   width: 15em;
-  float: left;
   margin-top: -30px;
   padding: 10px;
   border: 1px 1px lightgrey;
 }
-
+.sections:nth-child(3){ /* Section Projects */
+  position: relative;
+  width: 60%;
+  height: 60vh;
+  margin: auto;
+  text-align: center;
+}
 /******************
 FOOTER Style
 *******************/
