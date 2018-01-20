@@ -193,6 +193,14 @@ Body layout
 /**********************
 Sections Menu
 ***********************/
+.slider {
+  width: 90%;
+  margin: 30px auto;
+  height: 22vh;
+  font-size: 1.4em;
+  text-align: center;
+  background-color: #e0e0e0;
+}
 .sections {
   text-align: justify;
 }
@@ -226,7 +234,7 @@ Sections Menu
    background-color .5s esse-in-out .6s;
    cursor: pointer;
 }*/
-.sections:nth-child(1){ /* Section About me */
+.sections:nth-child(2){ /* Section About me */
   color: black;
   font-size: 1.1em;
   text-shadow: 1px 1px #fff;
@@ -236,7 +244,7 @@ Sections Menu
 }
  /*End of Section about me */
 
-.sections:nth-child(2){ /* Section Publication */
+.sections:nth-child(3){ /* Section Publication */
  background-image: url('../img/Publication.png');
  font-size: 14px;
  margin:0 30px;
@@ -261,14 +269,14 @@ transform: rotate(-5deg) scale(1.1);
 }
 /* End Section Publication */
 
-.sections:nth-child(3){/* Start Section Projects */
+.sections:nth-child(4){/* Start Section Projects */
   margin: 30px;
   height: 60vh;
   width: 90%;
   border-top: 1px solid #979494;
 }
 /* End Section Projects */
-.sections:nth-child(4){ /* Start Section CV */
+.sections:nth-child(5){ /* Start Section CV */
 }
 /* End Section CV */
 /*input[type=text],input[type=email], select, textarea {
@@ -420,6 +428,9 @@ Media Que.
 /******************
 Sections Body Style
 *******************/
+.slider {
+  width: 75%;
+}
 .sections {
   padding: 0 25px;
 }
@@ -430,7 +441,7 @@ Sections Body Style
 /*.sections button{
   width:35%;
 }*/
-.sections:nth-child(2){ /* Section Publication */
+.sections:nth-child(3){ /* Section Publication */
   width: 60%;
   margin: auto;
 }
@@ -463,6 +474,9 @@ FOOTER Style
 .Wrapper{
   max-width: 100%;
 }
+.slider {
+  width: 60%;
+}
 .sections {
   padding: 0 40px;
 }
@@ -470,7 +484,7 @@ FOOTER Style
   width: 60%;
   margin: auto;
 }
-.sections:nth-child(2){ /* Section Publication */
+.sections:nth-child(3){ /* Section Publication */
   position: relative;
   width: 60%;
   height: 60vh;
@@ -496,7 +510,7 @@ FOOTER Style
   padding: 10px;
   border: 1px 1px lightgrey;
 }
-.sections:nth-child(3){ /* Section Projects */
+.sections:nth-child(4){ /* Section Projects */
   position: relative;
   width: 60%;
   height: 60vh;
