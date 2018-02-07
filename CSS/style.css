@@ -4,7 +4,6 @@ Html:
 Css:
 1.1project center
 1.2resume style
-
 4.nav li moves with the page selected
 5.footer remove, replaced by fixed SM icons left-bottom corner with C
 Js and JQuery:
@@ -40,7 +39,7 @@ header {
   right: 0%;
   height: 0;
   overflow: hidden;
-  width: 40%;
+  width: 50%;
 }
 .main-nav ul {
   margin: 0;
@@ -58,7 +57,7 @@ header {
 .main-nav a {
   color: white;
   display: block;
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -73,7 +72,6 @@ header {
  a:visited {
    color: inherit;
  }
-
 /***********************
  Burger menu
  **********************/
@@ -116,41 +114,6 @@ header {
 }
 /*End of burger menu*/
 /*******************
-Welcome msg
-***********************/
-/*.welocme {
-  position: absolute;
-  top: 20%;
-  left: 30%;
-}*/
-/*@keyframes flicker{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-o-keyframes flicker{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-moz-keyframes flicker{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-webkit-keyframes flicker{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-.animate-flicker,
-.BoxAboutMe  a {
-   -webkit-animation: flicker 2s infinite;
-   -moz-animation: flicker 2s infinite;
-   -o-animation: flicker 2s infinite;
-    animation: flicker 2s infinite;
-}*/
-/*******************
 Downarrow
 ***********************/
 .hireMe {
@@ -182,7 +145,6 @@ Downarrow
 /**********************
 Body layout
 ***********************/
-
 .Wrapper {
   text-align: left;
   font-family: 'Varela Round', sans-serif;
@@ -195,9 +157,9 @@ Sections Menu
 ***********************/
 .slider {
   width: 90%;
-  margin: 30px auto;
+  margin: 50px auto;
   height: 22vh;
-  font-size: 1.4em;
+  font-size: 1.1em;
   text-align: center;
   background-color: #e0e0e0;
 }
@@ -212,38 +174,23 @@ Sections Menu
   text-align: center;
   color: #50340d;
 }
-/*.sections button{
-  font-family: monospace;
-  font-size: 17px;
-  background-color: #5b965b;
-  text-shadow: 1px 1px;
-  display: block;
-  width: 20%;
-  height: 20px;
-  margin: 10px auto;
-  padding: 20px;
-  text-align: center;
-}*/
-/*.sections button:hover,
-.sections button:focus{
-  color: #fff;
-  background-color: #50340d;
-  border: 2px sold #fff;
-  text-shadow: none;
-  transition: color .5s esse-in-out .6s,
-   background-color .5s esse-in-out .6s;
-   cursor: pointer;
-}*/
 .sections:nth-child(2){ /* Section About me */
   color: black;
   font-size: 1.1em;
   text-shadow: 1px 1px #fff;
   margin: 20px;
   padding: 30px 40px;
+  border-top: 1px solid #979494;
   border-bottom: 1px solid #979494;
 }
+.myImg {
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin: 15px auto;
+  border-radius: 50%;
+}
  /*End of Section about me */
-
 .sections:nth-child(3){ /* Section Publication */
  background-image: url('../img/Publication.png');
  font-size: 14px;
@@ -268,45 +215,35 @@ transition: transform .5s cubic-bezier(.7, -0.39, .31, 1.38);
 transform: rotate(-5deg) scale(1.1);
 }
 /* End Section Publication */
-
-.sections:nth-child(4){/* Start Section Projects */
+.sections:nth-child(4){ /* Start Section Projects */
   margin: 30px;
-  height: 60vh;
-  width: 90%;
+  height: 65vh;
   border-top: 1px solid #979494;
 }
+ /* Projects slider */
+ .slider2 {
+   display: block;
+   margin: auto;
+   height: 50vh;
+   padding: 10px;
+   font-size: 1.1em;
+   font-style: italic;
+   text-align: center;
+   background-color: #ffcc66;
+   text-align: left;
+   border-bottom: 1px solid #979494;
+ }
+  .project1 > h3 {
+    text-align: center;
+    color: #663300;
+  }
+ .project1 > img {
+   display: block;
+   width: 150px;
+   height: 150px;
+   margin: 10px auto;
+ }
 /* End Section Projects */
-.sections:nth-child(5){ /* Start Section CV */
-}
-/* End Section CV */
-/*input[type=text],input[type=email], select, textarea {
-    width: 60%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    box-shadow: 1px 2px lightgrey;
-  }*/
-
-/*input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-input[type=submit]:hover {
-    background-color: #45a049;
-}*/
-/*.FormContiner {
-    border-radius: 5px;
-    padding: 10px;
-}*/
-/*  End Section Contact */
-
 /*****************
  footer
  ******************/
@@ -319,13 +256,15 @@ input[type=submit]:hover {
   color: #fff;
 }
 .contact-Container {
-  /*margin: 20px;*/
+  position: absolute;
+  top: 12%;
+  left: 2%;
+  width: 35%;
 }
 .contact-Container > h1 {
-  margin-left: 10px;
-  padding: 40px 20px 0;
+  margin-left: 18px;
   color: tomato;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 .contact-Container li{
   list-style: none;
@@ -341,7 +280,6 @@ input[type=submit]:hover {
 .SMedia,
 #top {
   color: #fff;
-  /*border-left: 1px solid #979494;*/
 }
 .SMedia {
   position: absolute;
@@ -378,6 +316,10 @@ Media Que.
 .menu-toggle {
    display: none;
 }
+.Wrapper{
+  width: 85%;
+  margin: auto;
+}
 .contanier{
   position: relative;
 }
@@ -388,7 +330,7 @@ Media Que.
   right: 0%;
   width: 50%;
   background-color: #994c00;
-  /*box-shadow: 0 1px 4px rgba(0,0,0, 0.4);*/
+  box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
 }
 .main-nav ul {
   list-style: none;
@@ -414,22 +356,18 @@ Media Que.
 }
 .main-nav a:hover,
 .main-nav a:focus{
-  /*transform: scale(1.1);*/
+  transform: scale(1.1);
 }
 .main-nav a {
   transition: none !important;
 }
-/*.welocme {
-  position: absolute;
-  top: 20%;
-  left: 40%;
-}*/
 /*End Header page*/
 /******************
 Sections Body Style
 *******************/
 .slider {
   width: 75%;
+  font-size: 1.2em;
 }
 .sections {
   padding: 0 25px;
@@ -438,14 +376,14 @@ Sections Body Style
   width: 90%;
   margin: auto;
 }
-/*.sections button{
-  width:35%;
-}*/
 .sections:nth-child(3){ /* Section Publication */
-  width: 60%;
   margin: auto;
 }
-
+/*.project1{
+  border: 1px solid #979494;
+  padding: 2px;
+  margin: 2px;
+}*/
 /******************
 FOOTER Style
 *******************/
@@ -460,7 +398,7 @@ FOOTER Style
 .copy {
   position: absolute;
   bottom: 5%;
-  left: 40%;
+  left: 45%;
   font-size: 12px;
 }
 #top {
@@ -472,10 +410,11 @@ FOOTER Style
 
 @media only screen and (min-width: 1025px){
 .Wrapper{
-  max-width: 100%;
+  width: 70%;
+  margin: auto;
 }
 .slider {
-  width: 60%;
+  font-size: 1.3em;
 }
 .sections {
   padding: 0 40px;
@@ -484,9 +423,18 @@ FOOTER Style
   width: 60%;
   margin: auto;
 }
+.sections:nth-child(2) { /* Section About Me */
+  position: relative;
+}
+.myImg {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  margin-right: 20px;
+}
 .sections:nth-child(3){ /* Section Publication */
   position: relative;
-  width: 60%;
+
   height: 60vh;
   margin-bottom: 100px;
 }
@@ -512,23 +460,46 @@ FOOTER Style
 }
 .sections:nth-child(4){ /* Section Projects */
   position: relative;
-  width: 60%;
   height: 60vh;
   margin: auto;
   text-align: center;
+}
+.slider2 {
+  height: 40vh;
+  font-size: 1.1em;
+  text-align: center;
+  background-color: #ffcc66;
+  text-align: left;
+  border-bottom: 1px solid #979494;
+}
+.project1 {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+ .project1 > h3 {
+   text-align: center;
+   color: #663300;
+ }
+.project1 > img {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  margin-right: 20px;
 }
 /******************
 FOOTER Style
 *******************/
 .main-footer {
   position: relative;
-  padding: 10px 10px 10px 100px ;
+  padding: 10px 10px 10px 100px;
 }
 .SMedia {
   position: absolute;
-  bottom: 25%;
+  bottom: 35%;
   left: 50%;
-  width: 100%;
+  width: 50%;
 }
 .copy {
   position: absolute;

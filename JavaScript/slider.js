@@ -8,3 +8,13 @@ $(document).ready(function(){
     cssEase: "ease-in-out"
   })
 });
+
+$(document).ready(function(){
+  $('.slider2').slick({
+    infinite: true,
+    dots: true,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  })
+});
