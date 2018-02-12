@@ -1,15 +1,3 @@
-    /*
-Html:
-1.Projects and resume
-Css:
-1.1project center
-1.2resume style
-4.nav li moves with the page selected
-5.footer remove, replaced by fixed SM icons left-bottom corner with C
-Js and JQuery:
-1.plugins fullpage
-2.plugins scroll mouse up down
-*/
 * {
 box-sizing: border-box;
 }
@@ -205,11 +193,11 @@ color: #fff;
 margin-left: 2em;
 }
 .BoxPublication img {
-width: 12em;
-height: 15em;
-margin-left: 30%;
-margin-bottom: 3%;
-transition: transform .5s cubic-bezier(.7, -0.39, .31, 1.38);
+  width: 12em;
+  height: 15em;
+  margin-left: 30%;
+  margin-bottom: 3%;
+  transition: transform .5s cubic-bezier(.7, -0.39, .31, 1.38);
 }
 .BoxPublication img:hover{
 transform: rotate(-5deg) scale(1.1);
@@ -225,19 +213,35 @@ transform: rotate(-5deg) scale(1.1);
    display: block;
    margin: auto;
    height: 50vh;
-   padding: 10px;
-   font-size: 1.1em;
-   font-style: italic;
+   width: 90%;
+   font-size: .8em;
+   font-style: ;
    text-align: center;
-   background-color: #ffcc66;
+   background-color: #E0E0E0;
    text-align: left;
-   border-bottom: 1px solid #979494;
+   }
+ .slider2 {
+ /* Add shadows to create the "card" effect */
+  box-shadow: 5px 5px 5px 5px #524E4E;
+  transition: 0.4s;
+  border-radius: 5px;
  }
-  .project1 > h3 {
-    text-align: center;
-    color: #663300;
+ .slider2:hover {
+  transform: rotate(-1deg) scale(1.1);
+}
+ .card_container{
+  width: 80%;
+  margin: auto;
+ }
+ .Project_Des{
+   color: #921B09;
+   font-size: 1.2em;
+ }
+  .card > h3 {
+  text-align: center;
+  color: #663300;
   }
- .project1 > img {
+ .card > img {
    display: block;
    width: 150px;
    height: 150px;
@@ -356,6 +360,7 @@ Media Que.
 }
 .main-nav a:hover,
 .main-nav a:focus{
+  background-color: inherit;
   transform: scale(1.1);
 }
 .main-nav a {
@@ -379,11 +384,6 @@ Sections Body Style
 .sections:nth-child(3){ /* Section Publication */
   margin: auto;
 }
-/*.project1{
-  border: 1px solid #979494;
-  padding: 2px;
-  margin: 2px;
-}*/
 /******************
 FOOTER Style
 *******************/
@@ -463,30 +463,6 @@ FOOTER Style
   height: 60vh;
   margin: auto;
   text-align: center;
-}
-.slider2 {
-  height: 40vh;
-  font-size: 1.1em;
-  text-align: center;
-  background-color: #ffcc66;
-  text-align: left;
-  border-bottom: 1px solid #979494;
-}
-.project1 {
-  position: relative;
-  width: 90%;
-  margin: auto;
-  padding: 20px;
-}
- .project1 > h3 {
-   text-align: center;
-   color: #663300;
- }
-.project1 > img {
-  position: absolute;
-  top: 30%;
-  left: 5%;
-  margin-right: 20px;
 }
 /******************
 FOOTER Style
